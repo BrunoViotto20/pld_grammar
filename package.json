@@ -1,0 +1,25 @@
+{
+  "name": "pld",
+  "displayName": "PLD",
+  "description": "A configuration file format extension for PLDs",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pld",
+      "aliases": ["PLD", "pld"],
+      "extensions": ["td"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pld",
+      "scopeName": "source.pld",
+      "path": "./syntaxes/pld.tmLanguage.json"
+    }]
+  }
+}

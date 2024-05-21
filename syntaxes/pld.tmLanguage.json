@@ -1,0 +1,57 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "PLD",
+	"patterns": [ { "include": "#comment" }, { "include": "#block_expression" } ],
+	"repository": {
+		"comment": {
+			"name": "comment.line",
+			"begin": "\\*.*",
+			"end": "$",
+			"contentName": "comment.line"
+		},
+		"number": {
+			"name": "constant.numeric.pld",
+			"patterns": [
+				{ "name": "constant.numeric.decimal.pld", "match": "\\d+\\.\\d+" },
+				{ "name": "constant.numeric.integer.pld", "match": "\\d+" }
+			]
+		},
+		"block_expression": {
+			"name": "expression.block.pld",
+			"begin": "([a-zA-Z_][a-zA-Z_0-9]*)",
+			"end": "end_\\1",
+			"beginCaptures": {
+				"0": { "name": "variable" }
+			},
+			"endCaptures": {
+				"0": { "name": "variable" }
+			},
+			"applyEndPatternLast": 1,
+			"patterns": [
+				{ "include": "#comment" },
+				{ "include": "#assignment_expression" },
+				{ "include": "#block_expression" }
+			]
+		},
+		"assignment_expression": {
+			"name": "expression.assignment.pld",
+			"begin": "([a-zA-Z_][a-zA-Z_0-9]*)\\s*=\\s*",
+			"end": "$",
+			"beginCaptures": {
+				"0": { "name": "variable" }
+			},
+			"patterns": [
+				{ "include": "#comment" },
+				{ "include": "#number" }
+			]
+		},
+		"value_expression": {
+			"name": "expression.value.pld",
+			"begin": "\\(",
+			"end": "\\)"
+			"patterns": []
+		}
+	},
+	"scopeName": "source.pld",
+	"uuid": "uuid-generator-output"
+}

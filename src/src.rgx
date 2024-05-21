@@ -1,0 +1,35 @@
+
+	// "patterns": [
+	// 	{
+	// 		"name": "pattern.comment.pld",
+	// 		"match": "\\*.*"
+	// 	},
+	// 	{
+	// 		"name": "literal.string.pld",
+	// 		"match": ","
+	// 	},
+	// 	{
+	// 		"name": "literal.number.pld",
+	// 		"match": ","
+	// 	},
+	// 	{
+	// 		"name": "value.identifier.pld",
+	// 		"match": ","
+	// 	},
+	// 	{
+	// 		"name": "constant.character.open_parenthesis.pld",
+	// 		"match": "\\("
+	// 	},
+	// 	{
+	// 		"name": "constant.character.close_parenthesis.pld",
+	// 		"match": "\\)"
+	// 	},
+	// 	{
+	// 		"name": "constant.character.equal.pld",
+	// 		"match": "="
+	// 	},
+	// 	{
+	// 		"name": "constant.character.comma.pld",
+	// 		"match": ","
+	// 	}
+	// ],
