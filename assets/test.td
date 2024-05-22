@@ -69,7 +69,7 @@ teststep= 1   *111111111111111111111111111111
    end_measure
    reset
    end_reset
-   end_teststep
+end_teststep
 
 
 teststep= 2   *222222222222222222222222222222
