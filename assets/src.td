@@ -1,8 +1,13 @@
 * This is a test
 block
     test
-        a = 2.2
-        b = "abc"
-        c = (a = 1)
+        A = 2.2
+        B = "abc"
+        C = (a = 1)
     end_test
 end_block
+
+block
+    A = 1
+end_block
+    

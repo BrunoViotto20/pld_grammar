@@ -10,16 +10,34 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "pld",
-      "aliases": ["PLD", "pld"],
-      "extensions": ["td"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "pld",
-      "scopeName": "source.pld",
-      "path": "./syntaxes/pld.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "pld",
+        "aliases": [
+          "PLD",
+          "pld"
+        ],
+        "extensions": [
+          "td"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "pld",
+        "scopeName": "source.pld",
+        "path": "./syntaxes/pld.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "tsc": "^2.0.4",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "vscode-languageserver": "^9.0.1",
+    "vscode-languageserver-textdocument": "^1.0.11"
   }
 }
